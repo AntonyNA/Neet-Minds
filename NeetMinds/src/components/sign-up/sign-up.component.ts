@@ -15,7 +15,7 @@ export class SignUpComponent {
     signInWithPopup(this.auth, provider)
       .then((result) => {
         this.router.navigate(['/home']);
-        console.log('User signed in:', result.user);
+        console.log('User signed in');
       })
       .catch((error) => {
         console.error('Error during sign-in:', error);

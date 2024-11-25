@@ -1,0 +1,34 @@
+.signup-container {
+    background: linear-gradient(135deg, #85d9a1, #51f45c, #178313);
+    /* Ensure it covers the full height of the viewport */
+  }
+ 
+  button{
+    width: 25ch;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #28a745; /* Slightly darker green */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); /* Makes the button appear to "rise" */
+  }
+  .button:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }  
+  .signup-title {
+    font-family: ''; /* Use Google Fonts for better typography */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fafeff; /* A dark, neutral tone for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+    margin-bottom: 20px; /* Add space below the title */
+    letter-spacing: 1px; /* Slight letter spacing for a modern look */
+    text-transform: uppercase; /* Convert text to uppercase for emphasis */
+  }
