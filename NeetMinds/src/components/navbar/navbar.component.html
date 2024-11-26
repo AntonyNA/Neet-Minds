@@ -1,0 +1,10 @@
+<nav class="navbar" style="background-color: #146c43;">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"  style="color: #fafeff; font-family: '';"  >{{ title }}</span>
+      <div>
+        <button *ngIf="showLogoutButton" class="btn btn-danger" (click)="logout()">Logout</button>
+        <button *ngIf="showExamButtons" class="btn btn-success me-2" (click)="startExam()">Exam Start</button>
+        <button *ngIf="showExamButtons" class="btn btn-danger" (click)="endExam()">Exam End</button>
+      </div>
+    </div>
+  </nav>
