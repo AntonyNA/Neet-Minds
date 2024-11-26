@@ -2,25 +2,30 @@
   <div class="container-fluid">
     <!-- Title -->
     <span class="navbar-brand h1 title">{{ title }}</span>
-    <span class="navbar-brand h1">
-      <a  *ngIf="ShowExamLink" routerLink="/home" class="nav-link">Home</a>
-    </span>
-    <span class="navbar-brand h1">
-      <a  *ngIf="ShowExamLink" routerLink="/exam" class="nav-link">Exam</a>
-    </span>
-    <span class="navbar-brand h1">
-      <a  *ngIf="ShowExamLink" routerLink="/exam" class="nav-link">Repository</a>
-    </span>
-    <span class="navbar-brand h1">
-      <a  *ngIf="ShowExamLink" routerLink="/exam" class="nav-link">FavirouteNote</a>
-    </span>
-    <span class="navbar-brand h1">
-      <a  *ngIf="ShowExamLink" routerLink="/exam" class="nav-link">Rank List</a>
-    </span>
+    <div class="d-flex nav-links">
+      <span class="navbar-brand h1">
+        <a *ngIf="ShowExamLink" routerLink="/home" class="nav-link">Home</a>
+      </span>
+      <span class="navbar-brand h1">
+        <a *ngIf="ShowExamLink" routerLink="/exam" class="nav-link">Exam</a>
+      </span>
+      <span class="navbar-brand h1">
+        <a *ngIf="ShowExamLink" routerLink="/repository" class="nav-link">Repository</a>
+      </span>
+      <span class="navbar-brand h1">
+        <a *ngIf="ShowExamLink" routerLink="/favorite-note" class="nav-link">Favorite Note</a>
+      </span>
+      <span class="navbar-brand h1">
+        <a *ngIf="ShowExamLink" routerLink="/rank-list" class="nav-link">Rank List</a>
+      </span>
+      <span class="navbar-brand h1">
+        <a *ngIf="ShowExamLink" routerLink="/rank-list" class="nav-link">Video lecturer</a>
+      </span>
+    </div>
 
     <!-- Buttons -->
     <div>
-      <button *ngIf="showLogoutButton" class="btn btn-danger">Logout</button>
+      <button *ngIf="showLogoutButton" class="btn btn-danger" (click)="logout()">Logout</button>
       <button *ngIf="showExamButtons" class="btn btn-success me-2">Exam Start</button>
       <button *ngIf="showExamButtons" class="btn btn-danger">Exam End</button>
     </div>

@@ -40,7 +40,6 @@ export class NavbarComponent implements OnInit {
 logout() {
   signOut(this.auth)
   .then(() => {
-    window.location.reload(); 
     this.router.navigate(['/']);
     console.log('User signed out');
   })

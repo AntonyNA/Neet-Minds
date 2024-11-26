@@ -55,4 +55,14 @@
   .custom-navbar .btn-success:hover {
     background-color: #146c43; /* Darker green on hover */
   }
+
+  .nav-links {
+    display: flex; /* Flexbox ensures spans are inline */
+    gap: 20px; /* Space between spans */
+  }
+
+  .navbar-brand.h1 {
+    margin: 0; /* Reset default margins */
+    padding: 0 10px; /* Add padding between links */
+  }
   
