@@ -66,3 +66,13 @@
     padding: 0 10px; /* Add padding between links */
   }
   
+  .navbar-icon {
+    transition: transform 0.3s ease, fill 0.3s ease; /* Smooth animation for transformations and color */
+    fill: #ffffff; /* Default color */
+    cursor: pointer;
+  }
+  
+  .navbar-icon:hover {
+    transform: scale(1.2) rotate(10deg); /* Scale up slightly and rotate */
+    fill: #d4ed91; /* Change color on hover */
+  }

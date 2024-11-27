@@ -13,7 +13,6 @@ import { Auth, signOut } from '@angular/fire/auth';
 export class NavbarComponent implements OnInit {
   title = 'Neet Minds';
   showLogoutButton = false;
-  showExamButtons = false;
   ShowExamLink=false;
   constructor(private router: Router, private auth: Auth) {}
   
@@ -22,16 +21,13 @@ export class NavbarComponent implements OnInit {
       const currentUrl = this.router.url;
       if (currentUrl === '/exam') {
         this.showLogoutButton = false;
-        this.showExamButtons = true;
         this.ShowExamLink=false
       } else if(currentUrl === '/home') {
         this.showLogoutButton = true;
-        this.showExamButtons = false;
         this.ShowExamLink=true
       }
       else if(currentUrl === '') {
         this.showLogoutButton = false;
-        this.showExamButtons = false;
         this.ShowExamLink=false
       }
     });
